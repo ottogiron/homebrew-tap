@@ -2,7 +2,7 @@ class Compas < Formula
   desc "Multi-agent orchestrator for AI-assisted software development"
   homepage "https://github.com/ottogiron/compas"
   license any_of: ["MIT", "Apache-2.0"]
-  version "0.4.0"
+  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
