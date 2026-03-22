@@ -5,21 +5,21 @@ class Compas < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ottogiron/compas/releases/download/v0.4.1/compas-v0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "4ad26ea6480274ebf2752af93b146f1217d536e5d7d7cc38e9d5325dbc8d80c1"
+      url "https://github.com/ottogiron/compas/releases/download/v0.4.2/compas-v0.4.2-aarch64-apple-darwin.tar.gz"
+      sha256 "9c96899b3ae54a5d0b7aeb71e32f7b8ad1bd3545f7f4ccb079aeb20e660b14a4"
     else
-      url "https://github.com/ottogiron/compas/releases/download/v0.4.1/compas-v0.4.1-x86_64-apple-darwin.tar.gz"
-      sha256 "5638ec3e8829638042ce31d2f4f2649e5a4e8c597d657bbaaab16f3fec1d713d"
+      url "https://github.com/ottogiron/compas/releases/download/v0.4.2/compas-v0.4.2-x86_64-apple-darwin.tar.gz"
+      sha256 "049382db1deefac853032f49e17cee6575f7cca16252a72e16b2d5cf56b446f8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ottogiron/compas/releases/download/v0.4.1/compas-v0.4.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1e650d45ed4bf88abcb403d79dde2c125580751d37f7352ea17e11580cde7ee6"
+      url "https://github.com/ottogiron/compas/releases/download/v0.4.2/compas-v0.4.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "97c6552d7b47d2225fadffed093d814efcc4421a7ac71caf37065c496fb40e35"
     else
-      url "https://github.com/ottogiron/compas/releases/download/v0.4.1/compas-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b276052623707a7b40eb32726bbe9f563bfd0e2e039b2640ea7280efa022083f"
+      url "https://github.com/ottogiron/compas/releases/download/v0.4.2/compas-v0.4.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "26aaa06e753f5899db54b0eb3fd9917f3ac3d1a7497c235d46d007e8c9bb1f37"
     end
   end
 
