@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Register local tap
+        run: brew tap ottogiron/tap $(pwd)
+      - name: Audit formula
+        run: brew audit --formula ottogiron/tap/compas
+      - name: Check formula style
+        run: brew style ottogiron/tap/compas
